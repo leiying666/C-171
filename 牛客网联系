@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<assert.h>
+
+int main()
+{
+    char x=0xFFFF;
+    printf("%d",x--);
+}
+
+小段存储，字符串数组，取后面俩0xFF
+直接存到内存里，取出来的时候再去补码，也就是-1
+x--是先使用，再--
